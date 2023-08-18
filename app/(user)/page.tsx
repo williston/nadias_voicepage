@@ -13,13 +13,20 @@ import ReactAudio31 from "../components/ReactAudio3.1";
 import AudioBookCarousel4 from "../components/AudioBookCarousel4";
 import About from "../components/About";
 import Example from "../components/Contact2";
+import Link from "next/link";
+
 
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],
   style: ["italic", "normal"],
 });
 
+const bodoni_moda = Bodoni_Moda({
+  subsets: ["latin"],
+  style: ["italic"],
+})
 
+export const revalidate = 86400
 
 export default async function page() {
 
@@ -80,6 +87,7 @@ export default async function page() {
         </div>
       </div>
       <div className="relative w-full md:w-1/2 flex flex-row md:flex-col  items-center bg-indigo-400 mix-blend-multiply">
+     
         <Image
           className="rounded-3xl m-8 drop-shadow-2xl mix-blend-hard-light md:hover:scale-105  transition-transform duration-200 ease-out cursor-pointer md:w-auto md:h-auto"
           src="/images/IMG_8334.jpg"
@@ -90,11 +98,12 @@ export default async function page() {
           /*  layout='responsive' */
           priority={true}
         />
+       
 
         <div
-          className={`flex flex-col items-center text-3xl ${eb_garamond.className}  bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5`}
+          className={`flex flex-col items-center text-3xl bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5 ${bodoni_moda.className} `} 
         >
-          <p className=" text-sm md:text-xl font-medium p-3 indent-4">A bilingual voice that bridges worlds. Born in the vibrant heart of Argentina and now echoing through the bustling streets of Los Angeles, her voice carries the warmth of her roots and the versatility of her experiences. Let her bring your story to life.</p>
+          <p className='text-sm md:text-xl font-medium p-3 indent-4'>A bilingual voice that bridges worlds. Born in the vibrant heart of Argentina and now echoing through the bustling streets of Los Angeles, her voice carries the warmth of her roots and the versatility of her experiences. Let her bring your story to life.</p>
           <p  className="font-medium text-xl drop-shadow-xl">
           </p>
         

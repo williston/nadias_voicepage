@@ -8,10 +8,13 @@ import Image from 'next/image'
 import { EB_Garamond } from 'next/font/google'
 
 
+
 const eb_garamond = EB_Garamond({
     subsets: ["latin"],
     style: ["italic", "normal"]
 })
+
+export const revalidate = 86400
 
 export default async function page() {
 
