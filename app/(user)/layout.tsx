@@ -1,9 +1,4 @@
-
-import Header from '../components/Header'
 import Header2 from '../components/Header2'
-import AudioBookCarousel from '../components/AudioBookCarousel'
-//import AudioBookCarousel2 from '../components/AudioBookCarousel2'
-//import AudioBookCarousel3 from '../components/AudioBookCarousel3'
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,11 +12,8 @@ export default function RootLayout({
 }) {
   return (
         <div className='bg-slate-100'>
-       {/*  <Header/>  */}
         <Header2/>
         {children}
-        {/* <AudioBookCarousel2 /> */}
-      
-      </div>
+        </div>
   )
 }

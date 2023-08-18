@@ -1,0 +1,9 @@
+User-agent: Baiduspider
+    Disallow: /
+    
+User-agent: Yandex
+    Disallow: /
+    
+User-agent: GPTBot
+    Disallow: /
+    

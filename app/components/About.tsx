@@ -34,19 +34,7 @@ export default function About() {
             About
           </p>
           <p className="indent-8">
-            Nadia was born in Buenos Aires, Argentina and grew up in Los
-            Angeles, CA. She is of Haitian and Argentinean descent and is fluent
-            in both English and Spanish. Nadia has been in the entertainment
-            industry since she was 9 years old. Her first two auditions (and
-            bookings!) being a Kodak commercial and an episode of E.R. Since
-            then she has appeared in a number of commercial and print modeling
-            projects and worked with brands such as Coca-Cola, Honda, Adidas,
-            Verizon and many more. Along the way she earned a degree in nursing
-            and has close to 10 years experience in the healthcare industry
-            (making medical copy a breeze!). She has trained in voice over at
-            Edge Studio (coached by Jennifer Sims) and is currently training for
-            audiobook narration with Amanda Dolan. She was also selected for the
-            Penguin Random House Audiobook Mentorship Program class of 2023.{" "}
+          Nadia is a Los Angeles based actor and voice talent. She is originally from Buenos Aires, Argentina and is of Argentinean and Haitian descent. Her family moved to Los Angeles when she was 4 years old. She was drawn to the performing arts at a young age and studied ballet, violin and acting. She holds a bachelor&apos;s degree from the University of California, Irvine in Political Science and International Relations as well as a Bachelors of Science in Nursing from Western Governors University. She has over 10 years experience in healthcare working as a research coordinator as well as a Registered Nurse. Nadia studied French in high school and college. She has lived abroad in Bordeaux, France where she taught English to middle, high school and post-secondary students as part of the Teaching Assistantship Program in France (TAPIF) through the French Embassy in the United States. She is married and is a mom to a young daughter. She was one of twenty actors selected for the Penguin Random House Audiobook Mentorship Program class of 2023.
           </p>
         </div>
       </div>

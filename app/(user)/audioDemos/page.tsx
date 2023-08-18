@@ -1,17 +1,12 @@
 'use client'
 import React from 'react'
 import { groq } from 'next-sanity'
-import Link from 'next/link'
 import { client } from '@/sanity/lib/client'
 import { AudioDemo } from '@/typings'
 import AudioPlayerComponent from '@/app/components/StyledAudioPlayer'
 import Image from 'next/image'
 import { EB_Garamond } from 'next/font/google'
 
-/* type Props = {
-    data: AudioDemo[]
-}
- */
 
 const eb_garamond = EB_Garamond({
     subsets: ["latin"],

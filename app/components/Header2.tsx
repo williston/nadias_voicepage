@@ -3,6 +3,9 @@ import React, { EventHandler, useState } from 'react'
 import { EB_Garamond } from 'next/font/google'
 import Link from 'next/link'
 import { Bars4Icon } from '@heroicons/react/20/solid'
+import { AiOutlineInstagram, AiFillInstagram, AiOutlineLinkedin, AiFillLinkedin  } from 'react-icons/ai'
+import { PiSoundcloudLogoBold } from "react-icons/pi"
+
 
 const eb_garamond = EB_Garamond({subsets: ['latin'], style: ['italic', 'normal']})
 /* const bodoni_mode = Bodoni_Moda({subsets: ['latin']})
@@ -22,9 +25,20 @@ export default function Header() {
     <div className={`sticky top-0 z-20 bg-slate-100 mb-5`}>
             <div className={`flex flex-col md:flex-row justify-between px-5 py-3 mt-2 ${eb_garamond.className}`}>
                <div id='help' className={`flex flex-row justify-between min-w-full items-start font-sans  ${eb_garamond.className}`}>
-                  <div className='flex flex-col justify-end'>
-                      <p>social media icons here </p> 
-                      <div className='mt-2'>
+                  <div className='flex flex-col justify-start'>
+                     <div className='flex flex-row space-x-4 py-2'>
+                        <Link href="https://www.instagram.com/nadiaverde/?hl=en">
+                         <AiOutlineInstagram size={25} />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/nadia-verde/">
+                          <AiOutlineLinkedin size={25}/>
+                        </Link>
+                        <Link href="https://soundcloud.com/nadia-verde">
+                          <PiSoundcloudLogoBold size={25}/>
+                        </Link>
+                     
+                     </div>
+                        <div className='mt-2'>
                            <button onClick={(e) => setIsOpen(!isOpen)} className='hover:bg-slate-200 rounded-md p-1 md:hidden'>
                               <Bars4Icon className='h-6 w-6  text-black  border-gray-400 rounded-md '/>
                            </button>
@@ -37,8 +51,8 @@ export default function Header() {
                      <p className='uppercase md:text-sm'>voiceover</p>
                   </div>
                   <div>
-                     <p>nadiaverde@gmail.com</p>
-                     <p>phone number here</p>
+                     <p>nadiaverde03@gmail.com</p>
+                     <p>+1(323) 643-5428</p>
                   </div>
                </div>
             

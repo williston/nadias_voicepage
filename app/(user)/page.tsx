@@ -7,18 +7,11 @@ import {
   Libre_Bodoni,
   Roboto,
 } from "next/font/google";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import { groq } from "next-sanity";
 import { client } from "@/sanity/lib/client";
-import ReactAudioPlayer from "../components/ReactAudioPlayer";
-import ReactAudio3 from "../components/ReactAudio3";
 import ReactAudio31 from "../components/ReactAudio3.1";
-//import AudioBookCarousel2 from "../components/AudioBookCarousel2";
-//import AudioBookCarousel3 from "../components/AudioBookCarousel3";
 import AudioBookCarousel4 from "../components/AudioBookCarousel4";
 import About from "../components/About";
-import ContactMe from "../components/Contact";
 import Example from "../components/Contact2";
 
 const eb_garamond = EB_Garamond({
@@ -26,33 +19,13 @@ const eb_garamond = EB_Garamond({
   style: ["italic", "normal"],
 });
 
-/* async function getData(){
-    const query = groq`*[_type=='audioFile']{
-        ...,
-    }`
-
-    const data =  client.fetch(query)
-
-    return data
-    
-} */
 
 
 export default async function page() {
 
 
   console.log("page component");
-  /* const data = getData() */
-/* 
-  const query = groq`*[_type=='audioFile']{
-        ...,
-        file{
-            asset->
-        }
-
-    }`;
-
-  const data = await client.fetch(query); */
+  
 
   const query = groq`{'audioClips': *[_type == 'audioClip']{
     ...,
@@ -89,7 +62,7 @@ export default async function page() {
         <div className="absolute bottom-0 w-full h-full bg-slate-400 bg-opacity-60 text-white "></div>
         <div className="flex flex-col justify-center items-start mx-10 my-10 z-10 ">
           <p className="text-4xl tracking-wide  text-white font-semibold">
-          `&#34;Bilingual Brilliance `&#34; English & Spanish <br></br>
+          &#34;Bilingual Brilliance&#34; English & Spanish <br></br>
             <span className="">Voiceover</span>
           </p>
           <div className="mt-4">
@@ -103,7 +76,6 @@ export default async function page() {
           </div>
         </div>
         <div className="flex flex-col min-h-1/3 w-3/4 bg-slate-300/60 rounded-3xl text-white z-10 mb-5">
-          {/*  <ReactAudioPlayer data={data} />  */}
           <ReactAudio31 data={audioClips} />
         </div>
       </div>
@@ -120,13 +92,10 @@ export default async function page() {
         />
 
         <div
-          className={`flex flex-col items-center text-3xl ${eb_garamond.className} mx-10 my-5`}
+          className={`flex flex-col items-center text-3xl ${eb_garamond.className}  bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5`}
         >
-          <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione blanditiis omnis molestias rerum sit illum reiciendis quibusdam iste! Voluptate!</p>
+          <p className=" text-sm md:text-xl font-medium p-3 indent-4">A bilingual voice that bridges worlds. Born in the vibrant heart of Argentina and now echoing through the bustling streets of Los Angeles, her voice carries the warmth of her roots and the versatility of her experiences. Let her bring your story to life.</p>
           <p  className="font-medium text-xl drop-shadow-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            quisquam eligendi saepe, illo facere quo dolor sunt alias doloremque
-            odit.
           </p>
         
         </div>

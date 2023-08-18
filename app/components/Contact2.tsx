@@ -69,20 +69,13 @@ export default function Example() {
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-              integer elementum id sem. Arcu sed malesuada et magna.
+            Connect with Nadia and let her voice elevate your project. From English to Spanish, her vocal range is ready to resonate with your audience!
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
-                <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
-                </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -91,7 +84,7 @@ export default function Example() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
+                  +1(323) 643-5428
                   </a>
                 </dd>
               </div>
@@ -102,7 +95,7 @@ export default function Example() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                    hello@example.com
+                  nadiaverde03@gmail.com
                   </a>
                 </dd>
               </div>
