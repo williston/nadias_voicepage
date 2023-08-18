@@ -2,10 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import {
-  EB_Garamond,
-  Bodoni_Moda,
   Libre_Bodoni,
-  Roboto,
 } from "next/font/google";
 import { groq } from "next-sanity";
 import { client } from "@/sanity/lib/client";
@@ -13,17 +10,12 @@ import ReactAudio31 from "../components/ReactAudio3.1";
 import AudioBookCarousel4 from "../components/AudioBookCarousel4";
 import About from "../components/About";
 import Example from "../components/Contact2";
-import Link from "next/link";
 
 
-const eb_garamond = EB_Garamond({
+
+const libre_bodoni = Libre_Bodoni({
   subsets: ["latin"],
-  style: ["italic", "normal"],
-});
-
-const bodoni_moda = Bodoni_Moda({
-  subsets: ["latin"],
-  style: ["italic"],
+  style: ["italic",]
 })
 
 export const revalidate = 86400
@@ -31,7 +23,6 @@ export const revalidate = 86400
 export default async function page() {
 
 
-  console.log("page component");
   
 
   const query = groq`{'audioClips': *[_type == 'audioClip']{
@@ -101,7 +92,7 @@ export default async function page() {
        
 
         <div
-          className={`flex flex-col items-center text-3xl bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5 ${bodoni_moda.className} `} 
+          className={`flex flex-col items-center text-3xl bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5 ${libre_bodoni.className} `} 
         >
           <p className='text-sm md:text-xl font-medium p-3 indent-4'>A bilingual voice that bridges worlds. Born in the vibrant heart of Argentina and now echoing through the bustling streets of Los Angeles, her voice carries the warmth of her roots and the versatility of her experiences. Let her bring your story to life.</p>
           <p  className="font-medium text-xl drop-shadow-xl">

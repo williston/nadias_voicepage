@@ -27,8 +27,6 @@ export default async function page() {
     
     const data:AudioDemo[] = await client.fetch(query)
 
-    console.log(data)
-
   return (
     <div className='relative bg-indigo-300 my-2 py-8 h-screen'>
 
