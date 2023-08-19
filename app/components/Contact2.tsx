@@ -68,7 +68,7 @@ export default function Example() {
 
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-            <p className="mt-6 text-sm md:text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-sm md:text-lg leading-8 text-gray-900">
             Connect with Nadia and let her voice elevate your project. From English to Spanish, her vocal range is ready to resonate with your audience!
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">

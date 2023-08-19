@@ -78,7 +78,7 @@ export default async function page() {
           <div
             className={`flex flex-col items-center text-3xl bg-indigo-100/40 shadow-2xl rounded-3xl w-auto md:px-5 mx-10 my-5 ${libre_bodoni.className} `}
           >
-            <p className="text-sm md:text-xl font-medium p-3 indent-4">
+            <p className="text-sm md:text-xl text-black font-medium p-3 indent-4">
               A bilingual voice that bridges worlds. Born in the vibrant heart
               of Argentina and now echoing through the bustling streets of Los
               Angeles, her voice carries the warmth of her roots and the
