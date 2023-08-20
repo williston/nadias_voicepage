@@ -9,7 +9,7 @@ type Props = {
 
 export default function AudioBookCarousel4({ data }: Props) {
   return (
-    <div className="bg-fuchsia-700/70 mix-blend-normal h-[26rem] ">
+    <div className="bg-fuchsia-700/70 mix-blend-normal h-1/3 ">
       <div className="flex flex-row justify-center ">
         <p className="text-4xl font-medium text-white mt-5">
           Recent Audio Books
@@ -21,9 +21,9 @@ export default function AudioBookCarousel4({ data }: Props) {
         className="flex flex-row justify-between items-center mx-5 h-4/5"
       >
         <div className=" w-full mx-auto px-4 py-16 flex justify-center items-center">
-          <div className="carousel bg-slate-300/60 rounded-box space-x-3 px-5 shadow-2xl">
+          <div className="flex carousel bg-slate-300/60 rounded-box space-x-3 px-5 shadow-2xl h-1/2 md:h-auto">
             {data.map((audioBook) => (
-              <div key={audioBook._id}  className="carousel-item flex flex-col items-center my-2 space-y-2 ">
+              <div key={audioBook._id}  className="carousel-item flex flex-col items-center my-2 space-y-2 h-1/2">
                 <Link href={audioBook.audible_link}>
                   <Image
                   className="rounded-box"
