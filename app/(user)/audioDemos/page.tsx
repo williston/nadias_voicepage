@@ -46,7 +46,7 @@ export default async function page() {
             {data.map((item) => (
                 <div key={item._id}
                     className='bg-slate-300/60 flex flex-col carousel-item rounded-lg h-20 my-1 px-3 pb-3 md:hover:scale-105 transition-transform duration-200 ease-out cursor-pointer z-10'>
-                    <p className={`text-lg truncate my-2 ${eb_garamond.className}`}>{item.title}</p>
+                    <p className={`text-lg text-black truncate my-2 ${eb_garamond.className}`}>{item.title}</p>
                     <AudioPlayerComponent item={item.file.asset.url}/>
 
                 </div>
