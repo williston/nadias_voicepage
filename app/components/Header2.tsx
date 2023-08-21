@@ -21,6 +21,14 @@ export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  // Open the navbar and set a timeout to close it after 5 seconds
+  const handleOpenNavbar = () => {
+   setIsOpen(true);
+   setTimeout(() => {
+     setIsOpen(false);
+   }, 5000); // 5000 milliseconds = 5 seconds
+ };
+
   return (
     <div className={`sticky top-0 z-20 bg-slate-100 mb-0 md:mb-5`}>
             <div className={`flex flex-col md:flex-row justify-between px-5 py-3  mt-2 ${eb_garamond.className}`}>
@@ -39,7 +47,10 @@ export default function Header() {
                      
                      </div>
                         <div className='mt-2'>
-                           <button onClick={(e) => setIsOpen(!isOpen)} className='hover:bg-slate-200 rounded-md p-1 md:hidden'>
+                           <button onClick={(e) => {
+                              setIsOpen(!isOpen)
+                              handleOpenNavbar()
+                              }} className='hover:bg-slate-200 rounded-md p-1 md:hidden'>
                               <Bars4Icon className='h-6 w-6  text-black  border-gray-400 rounded-md '/>
                            </button>
                       </div>
@@ -58,7 +69,7 @@ export default function Header() {
             
                
             </div>
-            <div className={`flex flex-col bg-slate-300 ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row justify-between md:bg-transparent px-5 py-3 ${eb_garamond.className} cursor-pointer`}>
+            <div className={`flex flex-col bg-slate-300 transition-all duration-2000 ease-out ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row justify-between md:bg-transparent px-5 py-3 ${eb_garamond.className} cursor-pointer`}>
                   <Link href='/'>
                     <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out hover:font-semibold'>home</p>
                  </Link>

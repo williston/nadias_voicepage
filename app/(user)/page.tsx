@@ -87,7 +87,7 @@ export default async function page() {
           </div>
         </div>
       </div>
-      <div  className="relative border-4 border-blue-500">
+      <div  className="relative">
         <AudioBookCarousel4 data={audioBooks} />
         <div
           id="audioBookSection"
