@@ -59,7 +59,7 @@ export default async function page() {
               <p></p>
             </div>
           </div>
-          <div className="flex flex-col min-h-1/3 w-3/4 bg-slate-300/60 rounded-3xl text-white z-10 mb-5">
+          <div className=" relative flex flex-col min-h-1/3 w-3/4 bg-slate-300/60 rounded-3xl text-white z-10 mb-5">
             <ReactAudio31 data={audioClips} />
           </div>
         </div>
@@ -86,14 +86,13 @@ export default async function page() {
             </p>
           </div>
         </div>
+      </div>
+      <div  className="relative border-4 border-blue-500">
+        <AudioBookCarousel4 data={audioBooks} />
         <div
           id="audioBookSection"
-          className="absolute bottom-0 left-0 right-0 h-20"
+          className="absolute -mt-40 top-0 left-0 right-0 h-20"
         ></div>
-      </div>
-      <div className=" bg-fuchsia-700/70"></div>
-      <div className="">
-        <AudioBookCarousel4 data={audioBooks} />
       </div>
       <div id="aboutSection" className="">
         <About />

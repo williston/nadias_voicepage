@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-        <div className='bg-slate-100 w-full max-w-screen-sm md:max-w-7xl mx-auto'>\
+        <div className='bg-slate-100 w-full max-w-screen-sm md:max-w-7xl mx-auto'>
         <Header2 />
         
         {children}
