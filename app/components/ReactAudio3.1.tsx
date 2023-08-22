@@ -15,7 +15,7 @@ type Props = {
 
 export default function ReactAudio31({ data }: Props) {
   return (
-    <div className="flex flex-col justify-center z-10 px-5 py-8 carousel carousel-vertical overscroll-contain">
+    <div className="flex flex-col justify-center z-10 px-4 py-8 carousel carousel-vertical overscroll-contain">
       {data.map((item) => (
         <div
           key={item._id}

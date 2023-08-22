@@ -26,7 +26,7 @@ export default function Header() {
    setIsOpen(true);
    setTimeout(() => {
      setIsOpen(false);
-   }, 5000); // 5000 milliseconds = 5 seconds
+   }, 3000); // 5000 milliseconds = 5 seconds
  };
 
   return (
@@ -69,7 +69,8 @@ export default function Header() {
             
                
             </div>
-            <div className={`flex flex-col bg-slate-300 transition-all duration-2000 ease-out ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row justify-between md:bg-transparent px-5 py-3 ${eb_garamond.className} cursor-pointer`}>
+             <div className={`flex flex-col bg-slate-300 transition-all duration-2000 ease-out ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row justify-between md:bg-transparent px-5 py-3 ${eb_garamond.className} cursor-pointer`}> 
+         
                   <Link href='/'>
                     <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out hover:font-semibold'>home</p>
                  </Link>

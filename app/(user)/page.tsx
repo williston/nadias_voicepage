@@ -33,7 +33,7 @@ export default async function page() {
 
   return (
     <div className="">
-      <div className="h-fit md:h-screen w-screen flex flex-col-reverse md:flex-row  bg-slate-100 mx-auto max-w-7xl">
+      <div className="h-[80rem] md:h-screen w-screen flex flex-col-reverse md:flex-row  bg-slate-100 mx-auto max-w-7xl">
         <div className="relative w-full md:w-1/2 flex flex-col justify-start items-center">
           <Image
             className="object-cover"
@@ -59,7 +59,7 @@ export default async function page() {
               <p></p>
             </div>
           </div>
-          <div className=" relative flex flex-col min-h-1/3 w-3/4 bg-slate-300/60 rounded-3xl text-white z-10 mb-5">
+          <div className=" relative flex flex-col justify-center h-[20rem] w-3/4 bg-slate-300/60 rounded-3xl text-white pl-8 z-10 mb-5 md:mb-2 border-2 border-white">
             <ReactAudio31 data={audioClips} />
           </div>
         </div>
