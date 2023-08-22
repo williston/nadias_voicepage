@@ -59,7 +59,7 @@ export default async function page() {
               <p></p>
             </div>
           </div>
-          <div className=" relative flex flex-col justify-center h-[20rem] w-3/4 bg-slate-300/60 rounded-3xl text-white pl-8 z-10 mb-5 md:mb-2 border-2 border-white">
+          <div className=" relative flex flex-col justify-center h-[20rem] w-3/4 bg-slate-300/60 rounded-3xl text-white  z-10 mb-5 md:mb-2 border-2 border-white">
             <ReactAudio31 data={audioClips} />
           </div>
         </div>
