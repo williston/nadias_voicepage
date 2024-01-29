@@ -4,7 +4,8 @@ import { EB_Garamond } from 'next/font/google'
 import Link from 'next/link'
 import { Bars4Icon } from '@heroicons/react/20/solid'
 import { AiOutlineInstagram,  AiOutlineLinkedin } from 'react-icons/ai'
-import { PiSoundcloudLogoBold } from "react-icons/pi" 
+import { PiSoundcloudLogoBold } from 'react-icons/pi' 
+
 
 
 const eb_garamond = EB_Garamond({subsets: ['latin'], style: ['italic', 'normal']})
