@@ -14,7 +14,7 @@ const eb_garamond = EB_Garamond({subsets: ['latin'], style: ['italic', 'normal']
 
 
 
-export default function Header() {
+export default function Header2() {
 
 
 
