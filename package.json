@@ -35,6 +35,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.34",
     "daisyui": "^3.5.0"
   }
 }
