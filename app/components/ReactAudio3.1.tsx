@@ -13,6 +13,8 @@ type Props = {
   data: AudioClip[] | AudioDemo[];
 };
 
+export const revalidate = 3600
+
 export default function ReactAudio31({ data }: Props) {
   return (
     <div className="flex flex-col justify-center z-10 px-4 py-8 carousel carousel-vertical overscroll-contain">
