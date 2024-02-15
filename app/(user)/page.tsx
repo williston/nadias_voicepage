@@ -13,7 +13,7 @@ const libre_bodoni = Libre_Bodoni({
   style: ["italic"],
 });
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export default async function page() {
   const query = groq`{'audioClips': *[_type == 'audioClip']{

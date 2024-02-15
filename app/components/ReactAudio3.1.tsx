@@ -13,7 +13,7 @@ type Props = {
   data: AudioClip[] | AudioDemo[];
 };
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export default function ReactAudio31({ data }: Props) {
   return (

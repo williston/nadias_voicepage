@@ -7,7 +7,7 @@ type Props = {
   data: AudioBook[];
 };
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export default function AudioBookCarousel4({ data }: Props) {
   return (
