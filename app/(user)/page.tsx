@@ -80,9 +80,7 @@ export default async function page() {
           >
             <p className="text-sm lg:text-xl text-black font-medium p-3 indent-4">
               A bilingual voice that bridges worlds. Born in the vibrant heart
-              of Argentina and now echoing through the bustling streets of Los
-              Angeles, her voice carries the warmth of her roots and the
-              versatility of her experiences. Let her bring your story to life.
+              of Argentina and raised in the City of Angels.
             </p>
           </div>
         </div>
