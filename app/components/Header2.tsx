@@ -74,10 +74,10 @@ export default function Header2() {
                     <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out hover:font-semibold'>home</p>
                  </Link>
                  <Link href='/audioDemos' className=''>
-                    <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out  hover:font-semibold'>audio demos</p>
+                    <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out  hover:font-semibold'>audiobook demos</p>
                  </Link>
                  <Link  href='/#audioBookSection'>
-                    <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out  hover:font-semibold'>audio books</p>
+                    <p className='font-normal text-lg text-black uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out  hover:font-semibold'>recent work</p>
                  </Link > 
                  {/* <Link  href=''>
                     <p className=' hidden font-normal text-lg uppercase md:hover:scale-110 hover:underline underline-offset-4 transition-transform duration-200 ease-out  hover:font-semibold'>clients</p>
