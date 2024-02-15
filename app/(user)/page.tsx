@@ -13,7 +13,7 @@ const libre_bodoni = Libre_Bodoni({
   style: ["italic"],
 });
 
-export const revalidate = 86400
+export const revalidate = 86400;
 
 export default async function page() {
   const query = groq`{'audioClips': *[_type == 'audioClip']{
@@ -65,7 +65,7 @@ export default async function page() {
         </div>
         <div className="relative w-full md:w-1/2 flex flex-col  items-center bg-indigo-400 mix-blend-multiply">
           <Image
-            className="rounded-3xl m-8 drop-shadow-2xl mix-blend-hard-light md:hover:scale-105  transition-transform duration-200 ease-out cursor-pointer md:w-auto md:h-auto" 
+            className="rounded-3xl m-8 drop-shadow-2xl mix-blend-hard-light md:hover:scale-105  transition-transform duration-200 ease-out cursor-pointer md:w-auto md:h-auto"
             src="/images/IMG_8334.jpg"
             alt="photo"
             width={200}
@@ -80,12 +80,14 @@ export default async function page() {
           >
             <p className="text-sm lg:text-xl text-black font-medium p-3 indent-4">
               A bilingual voice that bridges worlds. Born in the vibrant heart
-              of Argentina and raised in the City of Angels.
+              of Argentina and raised in the City of Angels, her voice carries
+              the warmth of her roots and the versatility of her experiences.
+              Let her bring your story to life.
             </p>
           </div>
         </div>
       </div>
-      <div  className="relative">
+      <div className="relative">
         <AudioBookCarousel4 data={audioBooks} />
         <div
           id="audioBookSection"
